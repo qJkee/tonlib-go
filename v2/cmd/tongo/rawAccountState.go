@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
-	tonlib "github.com/mercuryoio/tonlib-go/v2"
+	tonlib "github.com/qJkee/tonlib-go/v2"
 	"github.com/spf13/cobra"
 	"log"
 	"os"
@@ -35,7 +35,7 @@ func rawAccountState(cmd *cobra.Command, args []string) {
 		fmt.Println("init connection error: ", err)
 		os.Exit(0)
 	}
-	
+
 	res, err := tonClient.RawGetAccountState(*tonlib.NewAccountAddress(args[1]))
 	if err != nil {
 		log.Fatal("Failed to get account state: ", err)

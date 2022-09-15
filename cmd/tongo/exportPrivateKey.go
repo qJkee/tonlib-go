@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
-	"github.com/mercuryoio/tonlib-go"
+	"github.com/qJkee/tonlib-go"
 	"github.com/spf13/cobra"
 	"os"
 )

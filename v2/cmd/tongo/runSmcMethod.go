@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
-	tonlib "github.com/mercuryoio/tonlib-go/v2"
+	tonlib "github.com/qJkee/tonlib-go/v2"
 	"github.com/spf13/cobra"
 	"log"
 	"os"
@@ -55,7 +55,7 @@ func runSmcMethod(cmd *cobra.Command, args []string) {
 
 	// parse extra params
 	params := []tonlib.TvmStackEntry{}
-	for _, arg := range (args[3:]) {
+	for _, arg := range args[3:] {
 		params = append(params, tonlib.NewTvmStackEntryNumber(tonlib.NewTvmNumberDecimal(arg)))
 	}
 

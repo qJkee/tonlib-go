@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
-	"github.com/mercuryoio/tonlib-go"
+	"github.com/qJkee/tonlib-go"
 	"github.com/spf13/cobra"
 	"log"
 	"os"
@@ -61,9 +61,9 @@ func sendGramm(cmd *cobra.Command, args []string) {
 
 	// prepare input key
 	inputKey := tonlib.InputKey{
-		Type: "inputKeyRegular",
+		Type:          "inputKeyRegular",
 		LocalPassword: base64.StdEncoding.EncodeToString(tonlib.SecureBytes(password)),
-		Key: pKey,
+		Key:           pKey,
 	}
 	_, err = tonClient.WalletInit(&inputKey)
 	if err != nil {

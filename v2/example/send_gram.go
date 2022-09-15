@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/base64"
 	"fmt"
-	tonlib "github.com/mercuryoio/tonlib-go/v2"
+	tonlib "github.com/qJkee/tonlib-go/v2"
 	"log"
 )
 

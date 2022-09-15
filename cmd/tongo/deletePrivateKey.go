@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/mercuryoio/tonlib-go"
+	"github.com/qJkee/tonlib-go"
 	"github.com/spf13/cobra"
 	"os"
 )

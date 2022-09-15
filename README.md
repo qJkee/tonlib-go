@@ -1,7 +1,7 @@
 # TONLIB Golang library
-![](https://github.com/mercuryoio/tonlib-go/workflows/Build/badge.svg)
-[![Go Report Card](https://goreportcard.com/badge/github.com/mercuryoio/tonlib-go)](https://goreportcard.com/report/github.com/mercuryoio/tonlib-go) 
-[![GoDoc](https://godoc.org/github.com/mercuryoio/tonlib-go?status.svg)](https://godoc.org/github.com/mercuryoio/tonlib-go) 
+![](https://github.com/qJkee/tonlib-go/workflows/Build/badge.svg)
+[![Go Report Card](https://goreportcard.com/badge/github.com/qJkee/tonlib-go)](https://goreportcard.com/report/github.com/qJkee/tonlib-go) 
+[![GoDoc](https://godoc.org/github.com/qJkee/tonlib-go?status.svg)](https://godoc.org/github.com/qJkee/tonlib-go) 
 
 
 
@@ -9,11 +9,11 @@ TONLIB Golang library for accessing [Telegram Open Network](https://test.ton.org
 **Warning:** this repository is under active development, not ready for production use
 ## Install
 ```sh
-$ go get -u github.com/mercuryoio/tonlib-go
+$ go get -u github.com/qJkee/tonlib-go
 ```
 ## Usage
 ```go
-import "github.com/mercuryoio/tonlib-go"
+import "github.com/qJkee/tonlib-go"
 ```
 ## Supported methods
 - [x] createNewKey
@@ -96,7 +96,7 @@ Create new client
 ## CLI:
 To install sample cli application:
 ```sh
-$ go get -u github.com/mercuryoio/tonlib-go/cmd/tongo
+$ go get -u github.com/qJkee/tonlib-go/cmd/tongo
 ```
 To run sample cli app your have to set LD_LIBRARY_PATH:
 
@@ -108,7 +108,7 @@ If you need to update structures and add new methods based on a fresh release of
  generation command. In order to perform such operation - run the command bellow and provide path of *.tl file to the running command 
  as in the example bellow. 
 ```sh
-$ go run github.com/mercuryoio/tonlib-go/cmd/tlgenerator /path/to/repos/ton/tl/generate/scheme/tonlib_api.tl
+$ go run github.com/qJkee/tonlib-go/cmd/tlgenerator /path/to/repos/ton/tl/generate/scheme/tonlib_api.tl
 ```
 ## Developers
 [Mercuryo.io](https://mercuryo.io)

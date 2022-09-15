@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/mercuryoio/tonlib-go"
+	"github.com/qJkee/tonlib-go"
 	"github.com/spf13/cobra"
 	"log"
 	"os"
@@ -37,7 +37,7 @@ func transactions(cmd *cobra.Command, args []string) {
 	address := args[1]
 	// parse lt
 	lt, err := strconv.ParseInt(args[2], 10, 64)
-	if err != nil{
+	if err != nil {
 		log.Fatalf("Failed to parse lt as integer number: `%s`. %s", args[2], err)
 	}
 	hash := args[3]

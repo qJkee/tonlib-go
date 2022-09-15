@@ -3,7 +3,7 @@ package main
 import (
 	"errors"
 	"fmt"
-	tonlib "github.com/mercuryoio/tonlib-go/v2"
+	tonlib "github.com/qJkee/tonlib-go/v2"
 	"github.com/spf13/cobra"
 	"log"
 	"os"
@@ -47,7 +47,7 @@ func createPK(cmd *cobra.Command, args []string) {
 	seed := tonlib.SecureBytes("")
 
 	// create ne wkey
-	pKey, err := tonClient.CreateNewKey(loc, mem, seed, )
+	pKey, err := tonClient.CreateNewKey(loc, mem, seed)
 	if err != nil {
 		log.Fatal("failed to create new key with error: ", err)
 		return
